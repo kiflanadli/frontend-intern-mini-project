@@ -1,33 +1,51 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useTransition, animated } from "react-spring";
 
 function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
 
-  let menu, menuMask;
+  const maskTransitions = useTransition(showMenu, null, {
+    from: { position: "absolute", opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  });
 
-  if (showMenu) {
-    menu = (
-      <div className="h-full w-4/5 bg-white fixed top-0 left-0 z-50 shadow">
-        The menu
-      </div>
-    );
-    menuMask = (
-      <div
-        className="w-full h-full bg-black-t-50 fixed top-0 left-0 z-50"
-        onClick={() => setShowMenu(false)}
-      ></div>
-    );
-  }
+  const menuTransitions = useTransition(showMenu, null, {
+    from: { opacity: 0, transform: "translateX(-100%)" },
+    enter: { opacity: 1, transform: "translateX(0%)" },
+    leave: { opacity: 0, transform: "translateX(-100%)" },
+  });
 
   return (
     <nav>
       <span className="text-xl">
         <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
       </span>
-      {menuMask}
-      {menu}
+      {maskTransitions.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div
+              key={key}
+              style={props}
+              className="w-full h-full bg-black-t-50 fixed top-0 left-0 z-50"
+              onClick={() => setShowMenu(false)}
+            ></animated.div>
+          )
+      )}
+      {menuTransitions.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div
+              key={key}
+              style={props}
+              className="h-full w-4/5 bg-white fixed top-0 left-0 z-50 shadow"
+            >
+              The menu
+            </animated.div>
+          )
+      )}
     </nav>
   );
 }
