@@ -12,7 +12,7 @@ function App() {
     <div className="relative pb-10 min-h-screen">
       <Router>
         <Header />
-        <div className="p-3">
+        <div className="p-3 sm:w-1/2 sm:mx-auto">
           <Switch>
             <Route path="/" exact>
               <Home />
