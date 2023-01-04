@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Frontend Internship Mini Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This mini project was created for Frontend Internship assignment test by Rakamin Academy.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The assessment](#the-assessment)
+  - [The course](#the-course)
+- [The project](#the-project)
+  - [Feature](#feature)
+  - [Limitation](#limitation)
+  - [Technology used](#technology-used)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is to create a React Application following a certain tutorial.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The deployment preview link is listed in the repo's description.
 
-### `npm test`
+### The assessment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The criteria for this assessment are as follows:
 
-### `npm run build`
+- Complete free course from [this Udemy tutorial](https://www.udemy.com/course/build-your-first-react-js-application/).
+- Follow and make sure the application works as expected from the course.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### The course
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[This course](https://www.udemy.com/course/build-your-first-react-js-application/) is a tutorial to build a mobile first web application that covers topics such as:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Creating a React single page app with npx create-react-app
+- JavaScript configurable CSS
+- Animated components
+- React Router
+- HTTP requests with Axios
+- Creating custom hooks for React
 
-### `npm run eject`
+## The project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Feature
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In this project, users will be able to:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- See all the dummy product data from mock-api
+- Toggle navigation buttton
+- Changing the view as a single page application through navigation menu
+- Click the product card to see the details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Limitation
 
-## Learn More
+This web application was built to be used on mobile screen, it is not recommended to view the app with larger screen device.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Technology used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Axios
+- React js
+- React-fontawesome
+- React-router
+- React-spring
+- TailwindCSS
+- MockAPI
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[kiflan adli](https://www.linkedin.com/in/kiflanadli/)
