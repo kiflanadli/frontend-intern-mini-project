@@ -12,7 +12,7 @@ export default function Product() {
     error: false,
   });
 
-  let content;
+  let content = null;
 
   useEffect(() => {
     setProduct({
